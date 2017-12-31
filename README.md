@@ -56,7 +56,7 @@ Below is the plot of the start of the drive
 Below is the plot of around the position of the bridge
 ![PID Plot](https://github.com/Geordio/CarND-PID-Control-Project/blob/master/py/debug_bridge_0.2_0_2.png  "PID Plot")
 
-In both locations the CTE is signifantly reduced. On teh bridge the oscilations are now fairly minimal.
+In both locations the CTE is signifantly reduced. On the bridge the oscilations are now fairly minimal.
 
 At this point I moved on to the I gain.
 Leaving the Kp as 0.2 and Kd as 2, I set Ki to 1.
@@ -65,6 +65,7 @@ I analysed the start plot below. If you look carefully you can see the cyan I va
 
 ![PID Plot](https://github.com/Geordio/CarND-PID-Control-Project/blob/master/py/debug_initial_0.2_1_2.png  "PID Plot")
 
+<img src="https://github.com/Geordio/CarND-PID-Control-Project/blob/master/py/debug_initial_0.2_1_2.png" alt="Drawing" style="width: 200px;"/>
 
 I iteratively reduced the Ki value until I reached 0.001 (I reduced it fairly quickly as I was confident that the vehicle could negogiate a full lap with Ki=0)
 A gif of a successful lap completion can be see below.

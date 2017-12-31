@@ -23,13 +23,16 @@ This performed porrly, crashing in a short space of time. The Steering command w
 
 A plot of the Steering output value can be seen below. Note that this actually shows the CTE value, the P value and the steering output, but as Kp = 1, Kd = 0, Ki = 0, all 3 traces are equal, i.e plotted on top of each other.
 Note, the keys ae misisng off these plots. The key is. CTE: Black, Steering Output: Red, P: Green, D: Blue, I: Cyan
+
 <img src="https://github.com/Geordio/CarND-PID-Control-Project/blob/master/py/debug_initial_1_0_0.png" alt="PID Plot" width="200" height="200"/>
 
 Hence I reduced the gain over a number of iterations the P gain until it was oscilating, but was able to stay on the road for the initial straight, and keeping the output steering command in the region 0 -1 to +1.
 At this point Kp = 0.2.
 
 See plot below
+
 <img src="https://github.com/Geordio/CarND-PID-Control-Project/blob/master/py/debug_initial_1_0_0.png" alt="PID Plot" width="200" height="200"/>
+
 The key is. CTE: Black, Steering Output: Red, P: Green, D: Blue, I: Cyan
 
 
@@ -43,22 +46,28 @@ This time the vehicle was able to get round a large proportion of the track, but
 I analysed the plot of the P,I,D values.
 
 Below is the plot of the start of the drive
+
 <img src="https://github.com/Geordio/CarND-PID-Control-Project/blob/master/py/debug_initial_1_0_0.png" alt="PID Plot" width="200" height="200"/>
+
 The key is. CTE: Black, Steering Output: Red, P: Green, D: Blue, I: Cyan
 
 Note the overshoot is now much more reduced than it was at this point
 
 Below is the plot of around the position of the bridge
+
 <img src="https://github.com/Geordio/CarND-PID-Control-Project/blob/master/py/debug_bridge_0.2_0_1.png" alt="PID Plot" width="200" height="200"/>
+
 The key is. CTE: Black, Steering Output: Red, P: Green, D: Blue, I: Cyan
 
 As you can see the oscilations at this point are very bad (as shown by the black CTE line)
 
 Note that the D (the blue line) is not contributing enough to minimise the overshoots, so I increased this further over a number of increments. When I got to Kd = 2, the vehilce was able to complete a full lap.
 Below is the plot of the start of the drive
+
 <img src="https://github.com/Geordio/CarND-PID-Control-Project/blob/master/py/debug_initial_0.2_0_2.png" alt="PID Plot" width="200" height="200"/>
 
 Below is the plot of around the position of the bridge
+
 <img src="https://github.com/Geordio/CarND-PID-Control-Project/blob/master/py/debug_bridge_0.2_0_2.png" alt="PID Plot" width="200" height="200"/>
 
 In both locations the CTE is signifantly reduced. On the bridge the oscilations are now fairly minimal.

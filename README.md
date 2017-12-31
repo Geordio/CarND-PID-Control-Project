@@ -65,7 +65,7 @@ I analysed the start plot below. If you look carefully you can see the cyan I va
 
 ![PID Plot](https://github.com/Geordio/CarND-PID-Control-Project/blob/master/py/debug_initial_0.2_1_2.png  "PID Plot")
 
-<img src="https://github.com/Geordio/CarND-PID-Control-Project/blob/master/py/debug_initial_0.2_1_2.png" alt="Drawing" style="width: 100px;"/>
+<img src="https://github.com/Geordio/CarND-PID-Control-Project/blob/master/py/debug_initial_0.2_1_2.png" alt="Drawing" width="50" height="50"/>
 
 I iteratively reduced the Ki value until I reached 0.001 (I reduced it fairly quickly as I was confident that the vehicle could negogiate a full lap with Ki=0)
 A gif of a successful lap completion can be see below.
